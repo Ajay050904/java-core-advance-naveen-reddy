@@ -1,0 +1,52 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java
+{
+	"name": "Java",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/java:1-17-bookworm",
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "none", // use Java that comes with the image (17)
+			"installMaven": "true",
+			"installGradle": "false"
+		}
+	},
+	// Run commands after the container is created
+	"postCreateCommand": "java -version && mvn -version",
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				// Main Java pack (includes debug, test, maven, etc.)
+				"vscjava.vscode-java-pack",
+				// Explicit language support (already in pack but safe)
+				"redhat.java",
+				// Dependency viewer and project view
+				"vscjava.vscode-java-dependency",
+				// Java test runner
+				"vscjava.vscode-java-test",
+				// Maven support
+				"vscjava.vscode-maven",
+				// (Optional) Gradle support if you ever use Gradle
+				"vscjava.vscode-gradle",
+				// GitHub Codespaces helper
+				"GitHub.codespaces"
+			],
+			"settings": {
+				// Format automatically on save
+				"editor.formatOnSave": true,
+				// Use Red Hat Java formatter for Java files
+				"[java]": {
+					"editor.defaultFormatter": "redhat.java"
+				},
+				// Java extension tweaks (optional)
+				// "java.configuration.checkProjectSettingsExclusions": false,
+				"java.format.enabled": true
+			}
+		}
+	}
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

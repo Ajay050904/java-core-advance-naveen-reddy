@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "Day-02/classes",
+        "Day-01",
+        "Day-02/interfaces"
+    ]
+}

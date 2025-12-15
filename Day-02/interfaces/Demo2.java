@@ -1,3 +1,5 @@
+package interfaces;
+
 @FunctionalInterface
 interface A {
     void show();

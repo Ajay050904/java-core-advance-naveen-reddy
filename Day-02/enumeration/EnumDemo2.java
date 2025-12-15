@@ -1,3 +1,5 @@
+package enumeration;
+
 enum Status {
     Running, Failed, Pending, Success;
 }

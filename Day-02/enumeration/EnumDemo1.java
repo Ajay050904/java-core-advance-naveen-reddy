@@ -1,3 +1,5 @@
+package enumeration;
+
 enum Status {
     Success, Failed, Loading, Crash; // objects or Named Constants
 }

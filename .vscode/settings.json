@@ -1,8 +1,13 @@
 {
+    // "java.project.sourcePaths": [
+    //     "Day-02/interfaces",
+    //     "Day-02/classes",
+    //     "Day-01",
+    //     "Day-02/enumeration"
+    // ],
+    "java.project.outputPath": "bin",
     "java.project.sourcePaths": [
-        "Day-02/interfaces",
-        "Day-02/classes",
-        "Day-01",
-        "Day-02/enumeration"
-    ]
+        "."
+    ],
+    "java.compile.nullAnalysis.mode": "disabled"
 }

@@ -5,9 +5,11 @@
     //     "Day-01",
     //     "Day-02/enumeration"
     // ],
+    "java.server.launchMode": "Standard",
     "java.project.outputPath": "bin",
     "java.project.sourcePaths": [
         "."
     ],
-    "java.compile.nullAnalysis.mode": "disabled"
+    "java.compile.nullAnalysis.mode": "disabled",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

@@ -1,0 +1,64 @@
+### **Q: Explain Data, Data Types, and Data Structures**
+
+**Answer (Concise Points):**
+
+* **Data**
+
+  * Core of all software applications
+  * Taken from user, processed, displayed, or stored in databases
+
+* **Variables**
+
+  * Used to store data
+  * Can be imagined as a **box** holding data
+
+* **Data Types**
+
+  * Define the type of data a variable can store
+  * **Primitive (system-defined) types:**
+
+    * `int` → numbers
+    * `float / double` → decimal values
+    * `string` → text
+    * `char` → single character
+
+* **User-Defined (Complex) Data Types**
+
+  * Used when primitive types are not enough
+  * Represent real-world entities (Human, Phone, Student)
+  * Examples:
+
+    * `struct` in C
+    * `class` in OOP languages
+
+* **Data + Operations**
+
+  * Every data type supports operations
+  * Integer → add, subtract, multiply, divide
+  * String → length, concatenate, substring
+
+* **Storing Multiple Data**
+
+  * Use **arrays, lists, sets**
+  * One structure stores many values
+  * Supports operations like insert, delete, search, access
+
+👉 **One-line Summary:**
+Data is stored using variables and data types, and data structures help store and manage multiple data efficiently with defined operations.
+
+
+1-> What is Abstract Data Type (ADT)?
+    . Definition:
+                Abstract Data Type (ADT) is a data type that defines data and the operations on that data without specifying the implementation details.
+    . A conceptual model
+    . Defines what data is stored
+    . Defines what operations can be performed
+    . Does N  OT specify how it is implemented
+    . 📌 Implementation may differ from language to language, but the concept remains the same.
+    . Examples of ADT:
+                    Array
+                    List
+                    Stack
+                    Queue
+                    Set
+                    Map

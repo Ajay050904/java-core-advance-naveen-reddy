@@ -11,6 +11,16 @@
     . Definition (Exam):
                     Data structure is a way of organizing and storing data efficiently to improve performance and reduce memory usage.
 
+3-> Why Do We Need Data Structures?
+    . To search, insert, delete, and process data faster
+    . To save memory
+    . To store large amounts of data efficiently
+    . To improve application performance
+
+4-> What is the difference between data and data structure?
+    . Data is raw information, while a data structure defines how that data is organized and stored.
+
+5-> 
 #2-> What are Data Structures and Why Are They Important?
 ********************************************************
 

@@ -1,0 +1,58 @@
+### Summary: Arrays & Time Complexity (Easy & Concise)
+```````````````````````````````````````````````````````
+
+> Array basics:
+````````````````
+    * An array stores multiple values in "one variable" instead of many separate variables.
+    * All elements are stored "contiguously in memory".
+    * Each element has the "same size".
+
+> Memory & Indexing
+````````````````````
+    * The array name stores the "address of the first element".
+    * Indexing starts from "0".
+    * Address formula:
+                "address of element = base address + index"
+    * Example: If base address = 101, then
+                . index 0 → 101
+                . index 3 → 101 + 3
+
+> Operations on Arrays (ADT concept)
+`````````````````````````````````````
+    1. Read (Access)
+        * Access by index (e.g., 'arr[3]')
+        * "Very fast" (direct memory access)
+    2. "Search"
+        * Search by value (e.g., find 17)
+        * Computer checks "one-by-one from start"
+        * "Slow" for large arrays
+    3. Insert
+        * At "end" → fast
+        * In "middle" → slow (elements must be shifted)
+    4. Delete
+        * From "end" → fast
+        * From "middle" → slow (elements must be shifted)
+
+> Why time matters
+```````````````````
+    * Performance is measured by "number of steps", not CPU speed.
+    * Different machines ≠ same performance.
+    * Efficient algorithms take "fewer steps".
+
+> Time Complexity (Intro) 
+``````````````````````````
+    * Helps compare algorithms using "steps count"
+    * Introduced via "Big O Notation" (explained later)
+
+> Sorted Array
+```````````````
+    * Elements remain sorted automatically.
+    * Insertion requires:
+    * Searching correct position
+    * Shifting elements
+    * More steps → more time
+
+> Key Takeaway
+```````````````
+    * Arrays are simple and fast for "reading", but "searching, inserting, and deleting (especially in the middle)" can be time-consuming.
+    * Always think about "how many steps" your code takes.

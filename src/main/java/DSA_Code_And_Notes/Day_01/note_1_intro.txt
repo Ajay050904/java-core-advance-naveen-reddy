@@ -6,8 +6,8 @@
 2-> What are Data Structures?
     . Data Structures are ways to organize and store data efficiently.
     . Efficiency is measured in:
-                            Performance (speed)
-                            Memory usage 
+                            ~ Performance (speed)
+                            ~ Memory usage 
     . Definition (Exam):
                     Data structure is a way of organizing and storing data efficiently to improve performance and reduce memory usage.
 
@@ -26,8 +26,6 @@
 
 6-> Can you give a real-life example of data structures?
     . A contact list uses arrays or lists, social networks use graphs, and file systems use trees.
-
-
 
 
 NOTE->

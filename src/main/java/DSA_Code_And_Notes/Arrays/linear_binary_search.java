@@ -31,10 +31,17 @@ public class linear_binary_search {
 
     public static void main(String[] args) {
         int[] nums = { 5, 7, 9, 11, 13 };
-        int target = 111;
-        int result = linearSearch(nums, target);
-        if (result != -1) {
-            System.out.println("Element found at index: " + result);
+        int target1 = 111;
+        int target2 = 11;
+        int result1 = linearSearch(nums, target1);
+        int result2 = binarySearch(nums, target2);
+        if (result1 != -1) {
+            System.out.println("Element found at index: " + result1 + " using Linear Search");
+        } else {
+            System.out.println("Element not found in the array.");
+        }
+        if (result2 != -1) {
+            System.out.println("Element found at index: " + result2 + " using Binary Search");
         } else {
             System.out.println("Element not found in the array.");
         }

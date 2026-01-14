@@ -4,8 +4,7 @@ public class arr_creation_and_initialization {
 
     // Array Construction [ Creation ]
     /*
-     * public static void main(String[] args)
-     * {
+     * public static void main(String[] args) {
      * // int[] a = new int[]; // [invalid] array dimension missing
      * // int[] x = new int{10,20,30}; // wrong declaration
      * // int[] a1,[]b1; // invalid ---> []b1

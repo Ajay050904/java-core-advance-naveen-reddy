@@ -2,7 +2,7 @@ package DSA_Code_And_Notes.Arrays.Arrays_Questions;
 
 import java.util.Scanner;
 
-public class second_largest {
+public class second_largest_in_arr {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,0 +1,135 @@
+* The Arrays Utility class is very important for interviews + clean code.
+
+# Arrays Utility Class (`java.util.Arrays`)
+```````````````````````````````````````````
+1. Introduction
+---------------
+        > `Arrays` is a 'utility class' present in the 'java.util' package.
+        > It provides 'static methods' to 'manipulate arrays'.
+        > Works with 'primitive arrays' and 'object arrays'.
+        > code: import java.util.Arrays;
+
+# Note: Since all methods are "static", object creation is not required.
+*******
+
+2. Why `Arrays` Utility Class is Needed?
+----------------------------------------
+        > Arrays do not support built-in operations.
+        > Common tasks like:
+                        * Sorting
+                        * Searching
+                        * Comparing
+                        * Printing
+        > become 'easy and readable' using `Arrays` class.
+
+        ✔ Improves 'code clarity'
+        ✔ Reduces 'manual looping'
+        ✔ Frequently used in 'interviews'
+
+3. Important Methods of `Arrays` Class
+--------------------------------------
+
+3.1 `Arrays.sort()`
+*******************
+    Purpose: Sorts the array in "ascending order"
+    ********
+    Syntax: Arrays.sort(arrayName);
+    *******
+    # Key Points:
+    *************   
+        > Uses 'Dual-Pivot QuickSort' (for primitive types)
+        > Uses 'TimSort' (for object types)
+        > Modifies the 'original array'
+        > Time Complexity: 'O(n log n)'
+
+3.2 `Arrays.toString()`
+***********************
+    Purpose: Converts array into "human-readable string"
+    ********
+    Syntax: Arrays.toString(arrayName);
+    *******
+    # Key Points:   
+    *************
+        > Best way to 'print array elements'
+        > Avoids printing 'memory reference'
+        > Mostly used for 'debugging'
+
+3.3 `Arrays.copyOf()`
+*********************
+    Purpose: Creates a "new array copy" with given length
+    ********
+    Syntax: Arrays.copyOf(originalArray, newLength);
+    *******
+    # Key Points:
+    *************
+        > If 'newLength > originalLength' → fills with default values  
+        > If 'newLength < originalLength' → elements are truncated
+        > Returns a 'new array'
+
+3.4 `Arrays.equals()`
+*********************
+    Purpose: Compares "content" of two arrays
+    ********
+    Syntax: Arrays.equals(array1, array2);
+    *******
+    Key Points:
+    ***********
+        > Returns 'true' if:
+                        . Same length
+                        . Same elements in same order
+        > Better than '==' operator
+        > Works for '1D arrays'
+
+3.5 `Arrays.binarySearch()`
+***************************
+    Purpose: Searches element using "Binary Search"
+    ********
+    Syntax: Arrays.binarySearch(arrayName, key);
+    *******
+    Key Points:
+    ***********
+        > Array 'must be sorted'   
+        > Returns:
+        > Index → if element found
+        > Negative value → if not found
+        > Time Complexity: 'O(log n)'
+
+4. Negative Return Value in `binarySearch()`
+--------------------------------------------
+    > " -(insertionPoint) - 1 "
+    > Helps identify "where element should be inserted"
+    > Useful in sorted insert operations
+
+5. Common Mistakes:
+-------------------
+    > ❌ Using `binarySearch()` on unsorted array 
+    > ❌ Using `==` instead of `Arrays.equals()`   
+    > ❌ Printing array without `toString()` 
+    > ❌ Forgetting `import java.util.Arrays`
+
+6. Interview-Important Notes
+----------------------------
+    > `Arrays` class contains **only static methods**
+    > Cannot be instantiated
+    > Frequently asked in:
+                    . Core Java interviews 
+                    . Coding rounds
+                    . MCQs
+
+7. Comparison: Manual vs Arrays Utility
+---------------------------------------
+________________________________________________________
+| Task       | Manual Code   | Arrays Class            |
+| ---------- | ------------- | ----------------------- |
+| Sorting    | Complex loops | `Arrays.sort()`         |
+| Printing   | Loop required | `Arrays.toString()`     |
+| Searching  | Custom logic  | `Arrays.binarySearch()` |
+| Comparison | Loop          | `Arrays.equals()`       |
+--------------------------------------------------------
+
+8. Summary:
+-----------
+    > 'java.util.Arrays' simplifies array operations
+    > Improves "readability", "performance", and "maintainability"
+    > Essential for "clean Java code"
+

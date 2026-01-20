@@ -1,0 +1,7 @@
+* The Arrays Utility class is very important for interviews + clean code.
+
+* Let’s go method by method, with simple examples.
+    
+    > Arrays Utility Class (java.util.Arrays)
+    > This class provides static methods to work with arrays.
+    > " import java.util.Arrays; " 

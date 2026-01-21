@@ -2,7 +2,7 @@ package DSA_Code_And_Notes.Arrays.Array_Utility_Class;
 
 import java.util.Arrays;
 
-public class SortExample {
+public class Sort {
     public static void main(String[] args) {
 
         int[] arr = { 5, 2, 8, 1, 3 };

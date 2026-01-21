@@ -75,8 +75,8 @@
     Key Points:
     ***********
         > Returns 'true' if:
-                        . Same length
-                        . Same elements in same order
+                        * Same length
+                        * Same elements in same order
         > Better than '==' operator
         > Works for '1D arrays'
 
@@ -90,8 +90,8 @@
     ***********
         > Array 'must be sorted'   
         > Returns:
-        > Index → if element found
-        > Negative value → if not found
+            * Index → if element found
+            * Negative value → if not found
         > Time Complexity: 'O(log n)'
 
 4. Negative Return Value in `binarySearch()`
@@ -112,9 +112,9 @@
     > `Arrays` class contains **only static methods**
     > Cannot be instantiated
     > Frequently asked in:
-                    . Core Java interviews 
-                    . Coding rounds
-                    . MCQs
+                    * Core Java interviews 
+                    * Coding rounds
+                    * MCQs
 
 7. Comparison: Manual vs Arrays Utility
 ---------------------------------------

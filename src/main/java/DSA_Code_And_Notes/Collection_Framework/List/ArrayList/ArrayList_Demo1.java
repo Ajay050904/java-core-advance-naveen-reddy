@@ -1,7 +1,6 @@
 package DSA_Code_And_Notes.Collection_Framework.List.ArrayList;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class ArrayList_Demo1 {
 

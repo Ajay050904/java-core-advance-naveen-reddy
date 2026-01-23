@@ -1,0 +1,96 @@
+Iterable
+   |
+Collection
+   |
+  List
+   |
+--------------------------------
+|              |               |
+ArrayList   LinkedList     Vector
+                               |
+                            Stack
+
+========================================
+| Method          | Description        |
+| --------------- | ------------------ |
+| `add()`         | Add element        |
+| `add(index, e)` | Insert at index    |
+| `get(index)`    | Access element     |
+| `set(index, e)` | Update element     |
+| `remove(index)` | Remove element     |
+| `indexOf()`     | First occurrence   |
+| `size()`        | Number of elements |
+========================================
+
+5.1 ArrayList
+**************
+Description:
+````````````> Uses dynamic array
+            > Fast random access
+            > Slower insertion/deletion in middle
+
+Key Points:
+``````````` > Allows duplicates
+            > Maintains insertion order
+            > Not synchronized
+            > Best for searching
+
+5.2 LinkedList
+***************
+Description:
+````````````> Uses doubly linked list
+            > Faster insertion/deletion
+            > Slower access
+
+Key Points:
+``````````` > Allows duplicates
+            > Maintains insertion order
+            > Can act as List + Queue + Deque
+
+5.3 Vector
+***********
+Description:
+````````````> Legacy class
+            > Thread-safe (synchronized)
+            > Slower than ArrayList
+
+Key Points:
+``````````` > Allows duplicates
+            > Maintains insertion order
+            > Used in multithreading
+
+5.4 Stack (Child of Vector)
+****************************
+Description:
+````````````> Represents LIFO (Last In First Out)
+            > Used in undo/redo, expression evaluation
+
+Key Points:
+``````````` > Push → add element
+            > Pop → remove top
+            > Peek → view top
+
+===============================================================================
+| Feature        | ArrayList     | LinkedList         | Vector        | Stack |
+| -------------- | ------------- | ------------------ | ------------- | ----- |
+| Data Structure | Dynamic Array | Doubly Linked List | Dynamic Array | LIFO  |
+| Access         | Fast          | Slow               | Fast          | Fast  |
+| Insertion      | Slow (middle) | Fast               | Slow          | Fast  |
+| Thread-safe    |      ❌       |      ❌           |      ✅       |   ✅ |
+| Legacy         |      ❌       |      ❌           |      ✅       |   ✅ |
+===============================================================================
+
+
+7. When to Use Which List:
+***************************
+    > ArrayList → Searching, frequent access
+    > LinkedList → Frequent insert/delete
+    > Vector → Thread-safe environment
+    > Stack → LIFO operations
+
+8. Interview One-Liners:
+*************************   
+    > List allows duplicates & maintains order
+    > ArrayList is faster than LinkedList for access
+    > Vector is synchronized
+    > Stack follows LIFO
